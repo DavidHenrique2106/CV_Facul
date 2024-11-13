@@ -44,7 +44,7 @@ const EuGithub = () => {
     }, []);
 
     if (carregar) {
-        return <p>Buscando dados de David Henrique...</p>;
+        
     }
 
     return (
@@ -86,25 +86,3 @@ const EuGithub = () => {
         </Card>
     );
 };
-
-export default function Portfolio() {
-    return (
-        <div>
-            <Header/>
-            <div className="sobre">
-                <Sobre/>
-            </div>
-            <hr />
-            <div className="meusprojetos">
-                <h1 style={{textAlign: 'center'}} ><b><i>Meus projetos importantes</i></b></h1>
-                <Projetos/>
-            </div>
-            <hr />
-            <div className="github">
-            <h1 style={{textAlign: 'center'}} ><b><i>Integração Api do Github   </i></b></h1>
-            <EuGithub />
-            </div>
-        
-        </div>
-    );
-}

@@ -1,0 +1,7 @@
+.projetos-container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    padding: 20px;
+}

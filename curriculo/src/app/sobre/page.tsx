@@ -5,7 +5,7 @@ export default function Sobre() {
   return (
     <>
       <div style={{ textAlign: "center" }} className="sobre">
-        <h1>Sobre mim</h1>
+        <h1>About me</h1>
         <h2>
           Me chamo <i>David Henrique - Desenvolvedor Júnior</i> <br />
           <br />

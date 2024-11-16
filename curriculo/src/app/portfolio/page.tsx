@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -8,10 +8,9 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Header from "../header/page"
+import Header from "../header/page";
 import Projetos from "../projetos/page";
-import Sobre from "../sobre/page"
-
+import Sobre from "../sobre/page";
 
 interface Github {
     id: number;
@@ -23,7 +22,6 @@ interface Github {
     public_repos: number;
     followers: number;
 }
-
 
 const EuGithub = () => {
     const [eu, setEu] = useState<Github | null>(null);
@@ -44,7 +42,7 @@ const EuGithub = () => {
     }, []);
 
     if (carregar) {
-        
+        return <Typography>Carregando...</Typography>;
     }
 
     return (
@@ -58,13 +56,13 @@ const EuGithub = () => {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                           Nome: {eu.name}
+                            Nome: {eu.name}
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                            Seguidores:  {eu.followers}
-                        </Typography>  
+                            Seguidores: {eu.followers}
+                        </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                            Bio:  {eu.bio}
+                            Bio: {eu.bio}
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
                             Data de criação: {eu.created_at}
@@ -86,3 +84,19 @@ const EuGithub = () => {
         </Card>
     );
 };
+
+export default function Portifolio() {
+    return (
+        <> 
+        <Header />
+        <Sobre />
+        <hr />
+        <Projetos />
+        <hr />
+        <h1 style={{
+            textAlign: 'center'
+        }}>integration with github API</h1>
+        <EuGithub />
+        </>
+    );
+}

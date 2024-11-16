@@ -9,7 +9,12 @@ import Grid from '@mui/material/Grid';
 
 export default function Projetos() {
     return (
+        <div>
+            <h1 style={{
+                textAlign: 'center'
+            }}>My Projects</h1>
         <Grid container spacing={2} justifyContent="center" sx={{ padding: 2 }}>
+            
             <Grid item xs={12} sm={6} md={3}>
                 <Card sx={{ maxWidth: 345 }}>
                     <CardMedia
@@ -101,6 +106,6 @@ export default function Projetos() {
                 </Card>
             </Grid>
         </Grid>
-        
+        </div>
     );
 }

@@ -6,7 +6,7 @@ import { Button, TextField, Box, Typography, Alert } from '@mui/material';
 function JogoBullsAndCows() {
   const [tentativas, setTentativas] = useState<string[]>([]);
   const [entrada, setEntrada] = useState('');
-  const [codigoAleatorio, setCodigoAleatorio] = useState(gerarCodigoAleatorio());
+  const [codigoAleatorio] = useState(gerarCodigoAleatorio());
   const [mostrarAlerta, setMostrarAlerta] = useState(false);
 
   function gerarCodigoAleatorio() {

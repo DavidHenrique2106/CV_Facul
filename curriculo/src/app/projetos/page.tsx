@@ -27,7 +27,7 @@ export default function Projetos() {
                             Buscador de CEP
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                            Projeto feito com ReactJS + JS para buscar CEP's com a API do OpenWeather
+                            Projeto feito com ReactJS + JS para buscar CEP&apos;s com a API do OpenWeather
                         </Typography>
                     </CardContent>
                     <CardActions>
